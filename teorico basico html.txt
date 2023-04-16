@@ -32,12 +32,23 @@
     RECOMENDACION:
     -Identar para resaltar el inicio y fin de una etiqueta
     -CTRL + shift + C = inspeccionar elemento
+    -CTRL + K + U = para comentar y descomentar un fragmento de codigo
+    -Usar el nombre junto y no separado(VinculoCinco != Vinculo Cinco) xq lo va a tomar como 2 cosas 
+     diferentes.
 
 ----------------
 
 /*
 reseteo para todos vean de esa forma la pagina
 en este caso no hay espacios
+
+margin: es el espacio que hay entre el borde del elemento y lo que esta fuera del elemento. Sin el margin no habria espacio ni arriba ni a los costados.
+padding: sirve para darle un espaciado al elementos,desde el borde hacia dentro.
+border-width: ancho del borde
+border-style: estilo del borde
+border-color: color del borde
+line-height: altura de la linea
+text-align: texto alineado
 */
 *{
     margin:0;
@@ -54,12 +65,23 @@ arriba,der,abajo,izq
 
 al poner en "a" sirve como filtro. En este caso 
 para no tener que usar muchos filtros, existen las clases
-
-clases: es un atributo que llevan los elementos html, son como filtros de filtros. 
+-----------
+clases: es un atributo que llevan los elementos html, son como filtros de filtros. los va agrupando todos con una misma etiqueta, para no llamarlo como en html, se llama clase.
 sirve para englobar todos los elementos dentro de un mismo grupo
+
+ID: identificador de elemento, no va a ser solamente la etiqueta en si, sino que va a tener un nombre
+identificador, ese nombre lo va a separar de todos los otros elementos, sino tambien de las otras 
+etiquetas que sean las misma que esa.
 */
 
 .vinculo2{
     color: black;
     background-color: darkgoldenrod;
 }
+
+#navbar .marca{
+    font-family:'Trebuchet MS';
+    font-size:30px;
+    font-weight: hold;
+}
+
