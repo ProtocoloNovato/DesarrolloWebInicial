@@ -32,3 +32,34 @@
     RECOMENDACION:
     -Identar para resaltar el inicio y fin de una etiqueta
     -CTRL + shift + C = inspeccionar elemento
+
+----------------
+
+/*
+reseteo para todos vean de esa forma la pagina
+en este caso no hay espacios
+*/
+*{
+    margin:0;
+    padding:0;
+}
+/*
+sistema de separacion:
+px=pixeles
+%=porciento
+
+arriba,der,abajo,izq
+0,0,0,0
+*/
+
+al poner en "a" sirve como filtro. En este caso 
+para no tener que usar muchos filtros, existen las clases
+
+clases: es un atributo que llevan los elementos html, son como filtros de filtros. 
+sirve para englobar todos los elementos dentro de un mismo grupo
+*/
+
+.vinculo2{
+    color: black;
+    background-color: darkgoldenrod;
+}
