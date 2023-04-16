@@ -26,19 +26,34 @@ h1{
 div a{
     color: darkmagenta;
 }
+/*para sacar el subrayado de los links*/
+a{
+    text-decoration: none;
+}
 /*
 al poner en "a" sirve como filtro. En este caso 
 para no tener que usar muchos filtros, existen las clases
 
 clases: es un atributo que llevan los elementos html, son como filtros de filtros. 
 sirve para englobar todos los elementos dentro de un mismo grupo
+
+ID: (identificador de elemento) maneja un solo valor, no va a ser solamente
+la etiqueta en si, sino que va a tener un nombreidentificador, ese nombre 
+lo va a separar de todos los otros elementos, sino tambien de las otras 
+etiquetas que sean las misma que esa. 
 */
+
 
 .vinculo2{
     color: black;
     background-color: darkgoldenrod;
 }
 
+#link-contacto{
+    color:green;
+    font-family:'Times New Roman';
+    font-size: 25px;
+}
 .parrafo1{
     margin: 5px;
     padding: 5px,0,5px,0; 
@@ -47,4 +62,6 @@ sirve para englobar todos los elementos dentro de un mismo grupo
     border-width: 5px;
     border-style: solid;
     border-color: grey;
+    line-height: 25px;
+    text-align:center;
 }/*si queres poner una medida en algun punto, tenes q poner los 4 lados*/
