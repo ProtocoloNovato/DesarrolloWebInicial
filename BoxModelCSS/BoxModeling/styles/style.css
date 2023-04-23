@@ -1,0 +1,107 @@
+*{
+    /*VARIABLES GLOBALES*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*ocupe el tamaño de la pagina*/
+    /*colocarlo siempre al inicio, para resetear y que cargue de igual
+    manera en cualquier navegador*/
+}
+.caja{
+    width:100px;
+    height:100px;
+    margin:20px;
+}
+.caja1{
+    background-color: aqua;
+    width:300px;
+    height:300px;
+    padding:20px;
+    margin:20px;
+    overflow:auto;
+    border-top:solid red;
+    border-right: dashed 7px green;
+    border-bottom: dotted 10px pink;
+    border-left: solid 12px orange;
+}
+
+.caja2{
+    background-color: chocolate;
+    width:300px;
+    padding:20px;
+    margin:20px;
+    border:3px blue;
+}
+
+/* .caja{
+    width:100px;
+    height:100px;
+    margin:20px;
+} */
+
+.amarilla{
+    background-color: yellow;
+}
+
+.rojo{
+    background-color: red;
+    position: sticky;
+    top: 40px;
+    left: 40px;
+}
+
+.verde{
+    background-color: green;
+    position:relative;
+    top:50px;
+    left:50px; 
+}
+
+.naranja{
+    background-color: orange;
+}
+
+.purpura{
+    background-color: purple;
+}
+
+.espacio{
+    background-color: bisque;
+    width:300px;
+    height:800px;
+}
+
+/*BOTONERA*/
+nav{
+    padding:1rem
+}
+
+.menu{
+    list-style-type: none;
+    margin:10px;
+    background-color: darkgray;
+}
+.menu li {
+    display: inline-block; /*alinearlo en una linea*/
+    text-align: center;
+    margin:10px;
+    background-color: gray;
+    padding: 10px;
+}
+
+.menu li a{
+    text-decoration: none; /*ningun tipo de deco*/
+    color: aliceblue;
+}
+
+.menu li:hover {
+    background-color: cadetblue;
+    border-radius: 40%;
+}
+
+.menu li:hover a{
+    color: rgb(30, 84, 243);
+}
+
+
+
+

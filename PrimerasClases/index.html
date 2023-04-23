@@ -1,0 +1,84 @@
+<!--
+<!DOCTYPE html>         <---- Le dice al navegador que lo lea como un archivo HTML
+<html lang="en">        <---- Le dice que idioma es el archivo HTML
+<head>                  
+    <meta charset="UTF-8">                                   <---- es para usar el set de letras (charset) latinoamerica
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <---- para que sea compatible con el navegador
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <---- para que sea compatible con el dispositivo
+    <title>Document</title>  <---- Titulo que aparece en la pestaña
+</head>
+<body>               
+    <---- aca se coloca todo el codigo
+<body>    
+</html>    
+
+    1-etiqueta 2- atributo 3- valor
+    ej: <etiqueta atributo = "valor">
+        contenido 
+    </etiqueta>
+
+    <br> -> salto de linea
+    <p></p> -> parrafo
+    <hr/> ->es una linea horizontal
+    <div></div> -> es para dividir bloques
+    
+    href es una referencia (para ir a otra pag u o otr archivo)
+    . -> directorio de donde estoy
+    / -> para separar los archivos
+    usar target="_black" para que abrirlo otra pestaña y que no se cambie la original
+
+    <img> un atributo de img es scr= "" q significa fuente
+    ej <img scr="./imagenes/imagen1.jpeg">
+    
+    RECOMENDACION:
+    -Identar para resaltar el inicio y fin de una etiqueta
+    -CTRL + shift + C = inspeccionar elemento
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Mi primera web</title>
+</head>
+<body>
+    <h1 
+        class="titulo">Pagina Inicio 
+    </h1>
+    <p>
+        Esta es mi primer salto de linea <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Porro eveniet, esse cum nobis voluptatum repellat voluptas, 
+        voluptates totam accusamus dolores ratione est quae aut eius 
+        ducimus nisi, officiis exercitationem eos!
+    </p>
+    <hr/>
+    <div>
+        <div>
+            <a class="vinculo1" href="./paginas/sobre_mi.html" >Conoce sobre mi</a>
+            soy un texto de ejemplo, ah y estoy dentro de un div
+            <p class="parrafo1"> 
+                habia una vez un programador que no era programador<br>
+                pero queria serlo, y se metio en varios cursos para empezar su 
+                entrenamiento. 
+            </p>
+        </div>
+        <!--usar target="_black" para que abrirlo otra pestaña-->
+        <div>
+            <a class="vinculo2" href="https://drive.google.com/drive/folders/1rMwRJh6jIT2RR7u6P3ay7gt83ay7yJEs" target="_black">...Para mas etiquetas ir a ese drive</a> 
+        </div>
+        <div>
+            <a  id="link-contacto" href="./paginas/contacto.html"target="_blank">Contacto</a>
+        </div>
+    </div>
+
+    <div>
+        <img src="./imagenes/BartyLisa.gif">
+    </div>
+</body>
+</html>
+

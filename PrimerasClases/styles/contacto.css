@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background-color: rgb(94, 136, 101);
+    color:rgb(245, 245, 245)
+}
+
+#navbar a{
+    background-color: rgb(245, 245, 245);
+}
+
+#navbar img{
+    width: 60px;
+    height: 60px;
+}
+
+#navbar .marca{
+    font-family:'Trebuchet MS';
+    font-size:30px;
+    font-weight: hold;
+}
