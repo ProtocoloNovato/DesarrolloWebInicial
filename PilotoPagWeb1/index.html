@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Everland</title>
+    <link rel="shortcut icon" href="./images/iconoPagCasa.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <header class="hero"> <!--creacion de la clase hero-->
+        <nav class="nav.contan"> <!--esto es para usar solo un contenedor (no pasamos ni rosamos los bordes)Dentro del menu de navegacion...-->
+            <div class="nav__logo"> <!--Tendra un nav logo-->
+                <h2 class="nav_title">Estudio Everland</h2> <!--Tendra un elemento h2 con el titulo-->
+            </div> 
+
+            <ul class="nav__link nav__link--menu"><!--creacion del nav_link y nav_link--menu -->
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a> <!--dentro de nav items,tendra un elemento A, con la clase inicio-->
+                </li><!--creacion de elemento li "nav__items"-->
+                <li class="nav__items"> <!--REPETIMOS PARA LOS DEMAS ELEMENTOS DEL MENU-->
+                    <a href="#" class="nav__links">Acerca de</a> 
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a> 
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Contacto</a> 
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Blog</a> 
+                </li>
+
+                <img src="./images/close.svg"  alt="IconoClose" class="nav__close"> <!--el ALT ayuda a la accesibilidad de la pagina, tbien se le agrega una clase "nav__close"-->
+            </ul>
+            <div class="nav__menu"> <!--creacion del div menu-->
+                <img src="./images/menu.svg"  alt="IconoMenu" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container"> <!--creacion de seccion hero__container ademas de la clase container-->
+            <h1 class="hero_title">Una inmobiliaria que te acompaña desde principio a fin.</h1> <!--h1 q incluye la clase hero-->
+            <p class="hero__paragraph">Buscamos atender todas las necesidades e inquietudes de nuestros clientes, basandonos en nuestra experiencia de mas de 15 años.</p>            <a href="#" class="cta">Contactanos</a> <!--agregamos un elemento A con la clase CTA-->
+        </section>
+        
+    </header>
+</body>
+</html>
