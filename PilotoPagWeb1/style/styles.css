@@ -36,12 +36,123 @@ body{
     left:0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../images/fondoInicio.jpg); /*180grados,degradado y un top 0%,  el otro color igual (capa de transparencia)*/
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../images/disenioInterior.jpg); /*180grados,degradado y un top 0%,  el otro color igual (capa de transparencia)*/
     background-size: cover; /*para q se adapte a la pagina*/
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);/*clippy css: visualizacion del recortamamiento de imagen */
     z-index: -1;
 }   
 .nav{
     --padding-container:0; 
-    
+    height:100%;
+    display: flex;/*para poner los elementos 1 al lado del otro*/
+    align-items: center;/*para  centrarlos verticalmente*/
+}
+
+.nav__title{
+    font-weight: 300;/*peso de fuente delgado*/
+}
+
+.nav__link{
+    margin-left: auto;   
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column; /*para q el flujo sea en columnas*/
+    grid-auto-columns: max-content;/*cada una mida lo max contenido*/
+    gap: 2em;/*espaciado*/
+}
+
+.nav__items{
+    list-style: none;
+}
+
+
+.nav__menu{
+    margin-left: auto;
+    text-decoration: none;
+    cursor: pointer; /*para q cada vez q pase el mouse, se active el display*/
+
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+}
+
+.nav__links{
+    color:#fff;
+}
+
+/*   H E R O    C O N T A I N E R   */
+
+.hero__container{ /*contenedor de la seccion*/
+    max-width: 800px; /*ancho max*/
+    --padding-container:0;
+    display: grid; /*fragmentos en vertical*/
+    grid-auto-rows: max-content; /*asi no ocupa mayor espacio del q deberia*/
+    align-content: center; /*se alinee verticalmente*/
+    gap: 1em;
+    padding-bottom: 100px;/*para q no se pegue al recorte*/
+    text-align: center;/*texto centrado*/
+}
+
+.hero__title{
+    font-size: 3rem; /*16px - 1rem*/
+}
+
+/*
+* 1rem sería igual a 16px en cualquier parte del documento.
+* em son un múltiplo del tamaño de fuente del elemento.
+*/
+
+.hero__paragraph{
+    margin-bottom: 20px; /*margen mayor entre el boton y el texto*/
+}
+
+.cta{
+    display: inline-block;
+    background-color:#2091f9;
+    justify-self: center;
+    color:#fff;
+    text-decoration: none;
+    padding: 13px 30px; /*13px arriba y abajo - 20px hacia los lados*/
+    border-radius: 32px; /*bordeado de 30px*/
+}
+
+/*   A B O U T    */
+
+.about{
+    text-align: center;/*centrado horizontal*/
+}
+
+.subtitle{
+    color: var(--color-tittle);
+    font-size: 2rem; /*tamanio fuente*/
+    margin-bottom:25px;/*espaciado*/
+}
+
+.about__paragraph{
+    line-height: 1.7; /*espacio entre parrafos*/
+}
+
+.about__main{ /*para q se coloquen uno al lado del otro*/
+    padding-top: 80px; /*mayor espacio con el parrafo de arriba*/
+    display:grid;
+    width: 90%;
+    margin:0 auto; /*para centrar el contenedor*/
+    gap: 1em;
+    overflow: hidden; /*para esconoder lo q sobra*/
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto)); /*columnas binamicas: q me repita tantas columns como me sea necesario. con un min de 260 y max auto(para q cree columnas automaticamente).Sin usar media Querry, solo CSS grid*/
+}
+
+.about__icons{
+    display: grid; 
+    gap: 1em; /*espaciado*/
+    justify-items: center; /*conjunto de iconos centrados*/
+    width: 260px; /*tamanio del conjunto de iconos*/
+    overflow: hidden; /*para q todo lo q salga de ese elemento se oculte*/
+    margin:0 auto; /*centrar todo*/
+}
+
+.about__icon{
+    width:40px; /*tamanio de icono*/
 }
