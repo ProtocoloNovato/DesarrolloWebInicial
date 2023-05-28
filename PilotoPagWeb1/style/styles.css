@@ -4,7 +4,7 @@
     --padding-container: 100px 0; /*100 hacia arriba y 0 a los costados*/
     --color-tittle: #001A49; 
 
-} /*creamos una variable*/
+} 
 
 body{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -27,6 +27,7 @@ body{
     position: relative; /*para q un elemento se posicione absolutamente a este contenedor*/
     display: grid; /*porq quiero crear 2 filas*/
     grid-template-rows: 100px 1fr;/*primera fila sea de 100px y la segunda (unidad relativa: fr) con lo sobrante*/
+    color:#fff;
 }
 
 .hero::before{ /*pseudoelemento a partir de la clase hero*/
@@ -39,8 +40,10 @@ body{
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../images/disenioInterior.jpg); /*180grados,degradado y un top 0%,  el otro color igual (capa de transparencia)*/
     background-size: cover; /*para q se adapte a la pagina*/
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);/*clippy css: visualizacion del recortamamiento de imagen */
-    z-index: -1;
+    z-index: -1; /*para correglar el texto sobre la imagen*/
 }   
+
+/*   N A V   */
 .nav{
     --padding-container:0; 
     height:100%;
@@ -155,4 +158,35 @@ body{
 
 .about__icon{
     width:40px; /*tamanio de icono*/
+}
+
+/*   K N O W L E D G E    */
+
+.knowledge{
+    background-color: #e5e5f7; /*utilizacion de background con patron (magicpattern)*/
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+}
+
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*para q se reparta el espacio equitativamente*/
+    gap: 1em;
+    align-items: center;/*centrado verticalmente*/
+}
+
+.knowledge__picture{
+    max-width: 500px; /*limitara la imagen*/
+}
+
+.knowledge__paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.knowledge__img{
+    width: 100%;    /*ocupe el 100% del padre*/
+    display: block;
 }
