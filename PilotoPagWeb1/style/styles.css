@@ -191,4 +191,51 @@ body{
     display: block;
 }
 
-/**/
+/*   P R I C E   */
+
+.price{ /*contenedor principal de la tabla precio*/
+    text-align: center;
+}
+
+.price__table{
+    padding-top: 60px;
+    display: flex; /*colocados uno al lado del otro*/
+    flex-wrap: wrap;/*en caso de q se desborden los elementos*/
+    gap: 2.5em;
+    justify-content: space-evenly; /*espaciado equitativo*/
+    align-items: center; /*centrar verticalmente*/
+}
+
+.price__element{
+    background-color: #e5e5f7;
+    text-align: center; /*centrar texto*/
+    border-radius: 10px; 
+    width: 330px;
+    padding: 40px;/*hacia todos los lados*/
+    --color-plan: #696871;/*custom propiety*/
+    --color-price: #1d293f;
+    --bg-cta: #fff;
+    --color-cta: #5454d4;
+    --color-item: #696871;
+}
+
+.price__name{
+    color: var(--color-plan); /*usamos las customs*/
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.price__price{
+    font-size: 2.5rem;
+    color: var(--color-price);
+}
+
+.price__items{
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #fff;
+}
