@@ -216,9 +216,18 @@ body{
     --color-price: #1d293f;
     --bg-cta: #fff;
     --color-cta: #5454d4;
-    --color-item: #696871;
+    --color-items: #696871;
 }
 
+.price__element--best{
+    background-color: #ff7143;
+    padding: 60px 40px; /*mayor tamanio para destacar*/
+    --color-plan: rgb(225 225 225 / 75%);/*custom propiety*/
+    --color-price: #fff;
+    --bg-cta: #9f3919;
+    --color-cta: #fff;
+    --color-items: #fff;
+}
 .price__name{
     color: var(--color-plan); /*usamos las customs*/
     margin-bottom: 15px;
@@ -227,15 +236,64 @@ body{
 
 .price__price{
     font-size: 2.5rem;
-    color: var(--color-price);
+    color: var(--color-price); /*custom*/
 }
 
 .price__items{
     margin-top: 35px;
-    display: grid;
-    gap: 1em;
+    display: grid; 
+    gap: 1em; /*espaciado*/
     font-weight: 300;
     font-size: 1.2rem;
     margin-bottom: 50px;
-    color: #fff;
+    color: var(--color-items); /*custom*/
+}
+
+.price__cta{ /*boton*/
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    font-weight: 600;
+    color: var(--color-cta);
+    box-shadow: 0 0 2px rgba(0 ,0 , 0 , .5);
+}
+
+/*   T E S T I M O N Y   */
+
+.testimony{
+    background-color: #e5e5f7;
+}
+
+.testimony__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px; /*1ra de 50, 3ra de 50 y la del medio el espacio sobrante*/
+    gap: 1em;
+    align-items: center;
+}
+
+.testimony__body{/*caja del testimonio*/
+    display: grid; /*1 tenga 2 columnas*/
+    grid-template-columns: 1fr max-content; /*primera conlumna de una 1fraccion y la segunda el maximo contenido*/
+    justify-content: space-between; /*q el contenido se vaya a las esquinas*/
+    align-items: center;
+    gap: 2em;
+}
+
+.testimony__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%; /*fijar obj 50%  horizontal y 30% en Y*/
+}
+
+.testimony__text{
+    max-width: 700px;
+}
+
+.testimony__arrow{
+    width: 90%;
+    cursor: pointer;/*y cada vez q pase el mouse q se vea el cursor*/
 }

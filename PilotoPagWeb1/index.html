@@ -88,7 +88,7 @@
             </div>
         </section>
 
-        <section class="prime container">
+        <section class="prime container"> <!--clase de precio-->
             <h2 class="subtitle">Obten el plan perfecto para aprender</h2>
 
             <div class="price__table">
@@ -96,7 +96,7 @@
                     <p class="price__name">Flexbox</p>
                     <h3 class="price__price">Free</h3>
                     
-                    <div class="plan__items">
+                    <div class="price__items">
                         <p class="price__features">Flexbox</p>
                         <p class="price__features">Layouts</p>
                         <p class="price__features">Responsive</p>
@@ -120,7 +120,7 @@
 
                 <div class="price__element">
                     <p class="price__name">Animaciones </p>
-                    <h3 class="price__price">70000</h3>
+                    <h3 class="price__price">$70000</h3>
                     
                     <div class="price__items">
                         <p class="price__features">Animation</p>
@@ -134,7 +134,50 @@
 
             
         </section>
+
+        <selection class="testimony"> <!--clase testimonio-->
+        <div class="testimony__container container"><!-- sera el contenedor del slider, ademas de tener la clase conteiner-->
+            <img src="./images/leftarrow.svg" alt="flecha_atras" class="testimony__arrow" id="before">
+            
+            <section class="testimony__body testimony__body--show" data-id="1">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es Nicolas Arriola, <span class="testimony__course">estudiante de martillero</span></h2>
+                    <p class="testimony_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam labore sequi consectetur quidem, quibusdam debitis omnis, iusto assumenda reiciendis ut molestias maxime adipisci explicabo ex deleniti similique laborum nemo.</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/face.jpg" alt="perfil" class="testimony__img">
+                </figure>
+            </section>
+
+            <section class="testimony__body" data-id="2"></section>
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es Jinx, <span class="testimony__course">estudiante de MySQL</span></h2>
+                    <p class="testimony_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam labore sequi consectetur quidem, quibusdam debitis omnis, iusto assumenda reiciendis ut molestias maxime adipisci explicabo ex deleniti similique laborum nemo.</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/face2.png" alt="perfil2" class="testimony__img">
+                </figure>
+            </section>
+
+            <section class="testimony__body" data-id="3"></section>
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es Draken, <span class="testimony__course">estudiante de artes marciales</span></h2>
+                    <p class="testimony_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam labore sequi consectetur quidem, quibusdam debitis omnis, iusto assumenda reiciendis ut molestias maxime adipisci explicabo ex deleniti similique laborum nemo.</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/face3.jpeg" alt="perfil3" class="testimony__img">
+                </figure>
+            </section>
+
+            <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+        </div>
+    </selection>
     </main>
+
+    
 
 </body>
 </html>
